@@ -1,0 +1,27 @@
+INSERT INTO students (Roll_no,First_name,Second_name)VALUES ('20','PAVAN','KEERTHI');
+Query OK, 1 row affected (0.29 sec)
+
+mysql> SELECT * FROM students;
++---------+------------+-------------+
+| Roll_no | First_name | Second_name |
++---------+------------+-------------+
+|      20 | PAVAN      | KEERTHI     |
++---------+------------+-------------+
+1 row in set (0.02 sec)
+
+mysql> select*from students;
++---------+------------+-------------+
+| Roll_no | First_name | Second_name |
++---------+------------+-------------+
+|      20 | keerthi    | Pavan       |
++---------+------------+-------------+
+1 row in set (0.00 sec)
+
+mysql> update from students where Second_name='Pavan';
+Query OK, 1 row affected (0.30 sec)
+
+Delete table Bio_data;
+Query OK, 0 rows affected (1.10 sec)
+
+mysql> select*from students;
+Empty set (0.00 sec)
